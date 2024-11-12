@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 )
 
 func SelectRandomWord(dictionnary *common.Dictionnary) (string, error) {
