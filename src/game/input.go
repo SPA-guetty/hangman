@@ -6,19 +6,13 @@ import (
 	"github.com/SPA-guetty/hangman/src/common"
 )
 
-func Checkletter(game *common.Game) string {
-	var letter string
-	fmt.Print("Choisissez : ")
-	fmt.Scan(&letter)
-	for {
+func Checkletter(game *common.Game, letter string) string {for {
 		cheatcode := false
 		if len(letter) != 1 {
 			if letter == game.Word {
 				Victory(game)
 			} else if !IsACheatCode(letter, game) {
-				fmt.Println(common.WarningText + "Veuillez entrer une seule lettre." + common.Reset)
-				fmt.Print("Choisissez : ")
-				fmt.Scan(&letter)
+				return "err1"
 				continue
 			} else {
 				cheatcode = true
@@ -28,10 +22,7 @@ func Checkletter(game *common.Game) string {
 			letter = string(letter[0] + 32)
 		}
 		if letter < "a" || letter > "z" {
-			fmt.Println("Veuillez entrer une lettre.")
-			fmt.Print("Choisissez : ")
-			fmt.Scan(&letter)
-			continue
+			return "err2"
 		}
 		if !cheatcode && !IsUsed(letter, game) {
 			game.GuessedLetters = append(game.GuessedLetters, rune(letter[0]))
@@ -63,7 +54,7 @@ func Input(game *common.Game) {
 		fmt.Print(common.DisplayJosé+"Voici les lettres utilisées: "+common.Reset)
 		SeeLetters(game.GuessedLetters)
 	}
-	letter := Checkletter(game)
+	letter := Checkletter(game, "")
 	isIn := common.Containsstr(game.Word, letter)
 	if isIn {
 		for i, char := range game.Word {
