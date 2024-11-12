@@ -2,8 +2,8 @@ package game
 
 import (
 	"fmt"
-	"hangman"
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman"
+	"github.com/SPA-guetty/hangman/src/common"
 )
 
 func Checkletter(game *common.Game) string {
