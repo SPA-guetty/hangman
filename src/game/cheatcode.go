@@ -2,7 +2,7 @@ package game
 
 import (
 	"fmt"
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 	"math/rand"
 )
 
