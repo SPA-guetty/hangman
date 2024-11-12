@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 )
 
 func LoadWords(filePath string) *common.Dictionnary {
