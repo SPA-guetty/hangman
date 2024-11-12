@@ -2,7 +2,7 @@ package hangman
 
 import (
 	"fmt"
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 )
 
 func Showjosé(nb int) {
