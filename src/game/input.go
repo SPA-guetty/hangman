@@ -49,12 +49,7 @@ func IsUsed(letter string, game *common.Game) bool {
 	return false
 }
 
-func Input(game *common.Game) {
-	if len(game.GuessedLetters) > 0 {
-		fmt.Print(common.DisplayJosé+"Voici les lettres utilisées: "+common.Reset)
-		SeeLetters(game.GuessedLetters)
-	}
-	letter := Checkletter(game, "")
+func Input(game *common.Game, letter string) {
 	isIn := common.Containsstr(game.Word, letter)
 	if isIn {
 		for i, char := range game.Word {
