@@ -3,7 +3,7 @@ package online
 import (
 	"context"
 	"fmt"
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 
 	firebase "firebase.google.com/go"
 	"google.golang.org/api/option"
