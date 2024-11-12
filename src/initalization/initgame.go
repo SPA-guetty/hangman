@@ -2,9 +2,9 @@ package initalization
 
 import (
 	"fmt"
-	"hangman/src/common"
-	"hangman/src/gamelogic"
-	"hangman/src/wordmanager"
+	"github.com/SPA-guetty/hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/gamelogic"
+	"github.com/SPA-guetty/hangman/src/wordmanager"
 )
 
 func InitGame(filepath string) (*common.Game, error) {
