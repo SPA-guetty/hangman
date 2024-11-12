@@ -2,8 +2,8 @@ package game
 
 import (
 	"fmt"
-	"hangman/src/common"
-	"hangman/src/wordmanager"
+	"github.com/SPA-guetty/hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/wordmanager"
 	"os"
 	"time"
 
