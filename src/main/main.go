@@ -1,8 +1,8 @@
 package main
 
 import (
-	"hangman/src/game"
-	"hangman/src/initalization"
+	"github.com/SPA-guetty/hangman/src/game"
+	"github.com/SPA-guetty/hangman/src/initalization"
 )
 
 func main() {
