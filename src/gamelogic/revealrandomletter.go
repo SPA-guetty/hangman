@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"os"
 
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 )
 
 func RevealRandomLetters(game *common.Game) {
