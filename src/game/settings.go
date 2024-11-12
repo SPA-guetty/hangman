@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 
 	"golang.org/x/term"
 )
