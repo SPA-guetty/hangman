@@ -49,7 +49,7 @@ func IsUsed(letter string, game *common.Game) bool {
 	return false
 }
 
-func Input(game *common.Game, letter string) {
+func Input(game *common.Game, letter string) *common.Game {
 	isIn := common.Containsstr(game.Word, letter)
 	if isIn {
 		for i, char := range game.Word {
@@ -67,4 +67,5 @@ func Input(game *common.Game, letter string) {
 		hangman.Showjosé(game.AttemptsLeft)
 		PrintUpdatedWord(game)
 	}
+	return game
 }
