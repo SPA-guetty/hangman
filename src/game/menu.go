@@ -8,7 +8,7 @@ import (
 	"github.com/mattn/go-runewidth"
 	"golang.org/x/term"
 
-	"hangman/src/common"
+	"github.com/SPA-guetty/hangman/src/common"
 )
 
 func centerText(text string, width int) string {
