@@ -55,7 +55,7 @@ func StartGame(gameInstance *common.Game) {
 	fmt.Println(string(gameInstance.RevealedLetters))
 
 	for gameInstance.AttemptsLeft > 0 {
-		Input(gameInstance)
+		Input(gameInstance, "")
 		if string(gameInstance.RevealedLetters) == gameInstance.Word {
 			Victory(gameInstance)
 		}
