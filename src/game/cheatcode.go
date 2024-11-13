@@ -47,7 +47,7 @@ func UseCheatCode(letter string, gameInstance *common.Game) {
 		SeeLetters(UnusedLetters(gameInstance))
 	} else if code == 4 {
 		// Suicide
-		Sacrifice(gameInstance)
+		gameInstance.AttemptsLeft = 0
 	}
 }
 
