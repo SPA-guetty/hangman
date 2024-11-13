@@ -22,7 +22,12 @@ func Checkletter(game *common.Game, letter string) string {for {
 			letter = string(letter[0] + 32)
 		}
 		if letter < "a" || letter > "z" {
-			return "err2"
+			return "err1"
+		}
+		for _, e := range game.GuessedLetters {
+			if string(e) == letter {
+				return "err2"
+			}
 		}
 		if !cheatcode && !IsUsed(letter, game) {
 			game.GuessedLetters = append(game.GuessedLetters, rune(letter[0]))
