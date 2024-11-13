@@ -9,6 +9,7 @@ type Game struct {
 	RevealedLetters []rune
 	CountErrors     int
 	CheatCodes      []string
+	Error		string
 }
 
 type Hangman struct {
