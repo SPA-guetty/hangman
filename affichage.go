@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/SPA-guetty/hangman/src/common"
 )
-
+//ceciestuntest
 func Showjosé(nb int) {
 	var tab []string
 	if nb == -1 {
